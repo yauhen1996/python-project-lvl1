@@ -1,16 +1,18 @@
-name: linter-check.yml
+name: linter-check
+
 on:
-        - push
+  push:
 jobs:
-build:          
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: setup-python
+  build:          
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v
+        
+      - name: setup-python
         uses: actions/setup-python@v2
-        - name: install
+      - name: install
         run: pip install poetry
-        - name: install2
+      - name: install2
         run: make install
-        - name: run linter
+      - name: run linter
         run: make lint
