@@ -1,4 +1,4 @@
-name: linter-check
+name: linter-check.yml
 on: 
        - push
 jobs:
@@ -7,10 +7,10 @@ jobs:
     steps:
             - uses: actions/checkout@v2
             - name: setup-python
-            uses: actions/setup-python@v2
+             uses: actions/setup-python@v2
             - name: install
-            run: pip install poetry
+             run: pip install poetry
             - name: install2
-            run: make install
+             run: make install
             - name: run linter
-            run: make lint
+             run: make lint
