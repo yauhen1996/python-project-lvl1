@@ -1,10 +1,10 @@
 name: linter-check.yml
 on: 
-       - push
-jobs:
+   - push
+      jobs:
         build:
-    runs-on: ubuntu-latest
-    steps:
+         runs-on: ubuntu-latest
+           steps:
             - uses: actions/checkout@v2
             - name: setup-python
              uses: actions/setup-python@v2
