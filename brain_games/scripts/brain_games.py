@@ -6,5 +6,5 @@ def main():
     welcome_user()
 
 
-if __name__ == 'welcome_user()_':
+if __name__ == 'welcome_user()':
     main()
