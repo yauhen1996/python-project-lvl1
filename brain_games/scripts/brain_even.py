@@ -12,7 +12,7 @@ def random_num():
     print('Hello, {}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
-    correct_2 ="'yes' is wrong answer ;(. Correct answer was 'no'."
+    correct_2 = "'yes' is wrong answer ;(. Correct answer was 'no'."
     correct = "'no' is wrong answer ;(. Correct answer was 'yes'."
     while i <= 2:
         a = randint(1, 100)
