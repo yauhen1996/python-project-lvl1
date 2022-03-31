@@ -24,7 +24,7 @@ def calc():
             i += 1
         else:
             cor = f"'{a}' is wrong answer ;(. Correct answer was '{eval(su)}'."
-            return print(cor + "\nLet's try again, {}".format(name))
+            return print(cor + "\nLet's try again, {}!".format(name))
     return print('Congratulations, {}!'.format(name))
 
 
