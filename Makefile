@@ -9,7 +9,7 @@ package-install: #
 brain-games: # 
 	poetry run brain-games
 lint: # 
-	poetry run flake8 brain_games/scripts/brain_calc
+	poetry run flake8 brain_games/scripts/brain_calc.py
 brain-even: # 
 	poetry run brain-even
  
