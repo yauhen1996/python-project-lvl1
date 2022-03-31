@@ -11,4 +11,6 @@ brain-games: #
 lint: # 
 	poetry run flake8 brain_calc
 brain-even: # 
-	poetry run brain-even	
+	poetry run brain-even
+ 
+		
