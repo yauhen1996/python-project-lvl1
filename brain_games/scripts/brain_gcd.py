@@ -14,14 +14,15 @@ def nod():
     print('Find the greatest common divisor of given numbers.')
     i = 0
     while i < 3:
-        a = (randint(50 ,90), randint(30, 80))
+        a = (randint(50, 90), randint(30, 80))
         print(f'Question: {a[0]} {a[1]}')
         answer = int(input('Your answer: '))
-        if int(gcd(a[0], a[1])) == answer:
+        gc = int(gcd(a[0], a[1]))
+        if gc == answer:
             print('Correct!')
             i += 1
         else:
-            x = f"'{answer}' is wrong answer ;(. Correct answer was '{int(gcd(a[0], a[1]))}'."
+            x = f"'{answer}' is wrong answer ;(. Correct answer was '{gc}'."
             return print(x + "\nLet's try again, {}!".format(name))
     return print('Congratulations, {}!'.format(name))
 
@@ -32,4 +33,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
