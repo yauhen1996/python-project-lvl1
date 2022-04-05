@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["yauhen1996"]
 packages = [
-  { include = "brain_games1" },
+  { include = "brain_games" },
 ]
 
 [tool.poetry.scripts]
