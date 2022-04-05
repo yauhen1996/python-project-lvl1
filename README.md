@@ -4,3 +4,5 @@
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 https://asciinema.org/a/Kz3lyPCPrjq2RKBdJfpyAJZiK
 https://asciinema.org/a/ECItvcVZIQggoityRqtrFHlQs
+https://asciinema.org/connect/6e84ee9c-2b10-425a-aa37-0ffe925342d9
+https://asciinema.org/a/RtN8WlrD4jb8u8D38Withxudl
