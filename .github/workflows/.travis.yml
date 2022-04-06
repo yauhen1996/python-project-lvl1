@@ -1,9 +1,4 @@
 language: python
-
-install:
-  - make install
-
-script: make lint
 rvm:
  - 3.9
  - jpython
