@@ -1,49 +1,11 @@
 #! /usr/bin/env python3
 
 
-from random import randint
-
-import prompt
-
-
-num = randint(2, 50)
-
-
-def prime(num):
-    if num == 2 or num == 3:
-        return True
-    if num < 2 or num % 2 == 0:
-        return False
-    for i in range(2, num):
-        if num % i == 0:
-            return False
-    return True
-
-
-def prime_1(num):
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    i = 0
-    while i < 3:
-        num = randint(2, 40)
-        print('Question:', num)
-        answer = input('Your answer: ')
-        answer_one = 'yes'
-        answer_two = 'no'
-        if (prime(num) is False and answer == 'no') or (prime(num) is True and answer == 'yes'):
-            print('Correct!')
-        elif prime(num) is False and answer == 'yes':
-            return print(f"'{answer_one}' is wrong answer ;(. Correct answer was '{answer_two}'.?" + "\nLet's try again, {}!".format(name))
-        elif prime(num) is True and answer == 'no':
-            return print(f"'{answer_two}' is wrong answer ;(. Correct answer was '{answer_one}'.?" + "\nLet's try again, {}!".format(name))
-        i += 1
-    return print('Congratulations, {}!'.format(name))
+from brain_games.games.prime import prime_1
 
 
 def main():
-    prime_1(num)
+    prime_1()
 
 
 if __name__ == '__main__':
