@@ -2,17 +2,12 @@
 from random import randint
 
 
-import prompt
-
-
 num = randint(2, 50)
 
 
 def prime(num):
     if num == 2 or num == 3:
         return True
-    elif num < 2 or num % 2 == 0:
-        return False
     for i in range(2, num):
         if num % i == 0:
             return False
@@ -21,7 +16,7 @@ def prime(num):
 
 def prime_1():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = input('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0

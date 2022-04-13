@@ -4,10 +4,12 @@ from random import randint, choice
 
 import prompt
 
+def welcome():
+    print('Welcome to the Brain Games!')
+
 
 def calc():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = input('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('What is the result of the expression?')
     i = 0
