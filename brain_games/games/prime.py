@@ -29,15 +29,11 @@ def prime_1():
         num = randint(2, 40)
         print('Question:', num)
         answer = input('Your answer: ')
-        answer_yes = 'yes'
-        answer_no = 'no'
-        if prime(num) is False and answer == answer_no:
+        if prime(num) is False and answer == 'no' or prime(num) is True and answer == 'yes':
             print('Correct!')
-        elif prime(num) is True and answer == answer_yes:
-            print('Correct!')
-        elif prime(num) is False and answer != answer_no:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{answer_no}'.?\nLet's try again, {name}!")
-        elif prime(num) is True and answer != answer_yes:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{answer_yes}'.?\nLet's try again, {name}!")
+        elif prime(num) is False and answer != 'no':
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.?\nLet's try again, {name}!")
+        else:
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.?\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')
