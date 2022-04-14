@@ -24,12 +24,9 @@ def nod():
         print(f'Question: {num_1} {num_2}')
         answer = input('Your answer: ')
         gcd_1 = gcd(num_1, num_2)
-        try:
-            if gcd_1 == int(answer):
-                print('Correct!')
-            else:
-                return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'.\nLet's try again, {name}!")
-            i += 1
-        except ValueError:
+        if str(gcd_1) == answer:
+            print('Correct!')
+        else:
             return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'.\nLet's try again, {name}!")
+        i += 1
     return print(f'Congratulations, {name}!')
