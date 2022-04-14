@@ -19,10 +19,11 @@ def nod():
     welcome()
     i = 0
     while i < 3:
-        num = (randint(50, 90), randint(30, 80))
-        print(f'Question: {num[0]} {num[1]}')
+        num_1 = randint(50, 90)
+        num_2 = randint(30, 80)
+        print(f'Question: {num_1} {num_2}')
         answer = input('Your answer: ')
-        gcd_1 = gcd(num[0], num[1])
+        gcd_1 = gcd(num_1, num_2)
         try:
             if gcd_1 == int(answer):
                 print('Correct!')
