@@ -11,7 +11,6 @@ def welcome():
 
 
 def calc():
-    welcome()
     i = 0
     while i < 3:
         list_1 = (randint(20, 30), randint(1, 20))
