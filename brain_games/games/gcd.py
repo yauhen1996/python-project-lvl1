@@ -26,10 +26,9 @@ def nod():
         try:
             if gcd_1 == int(answer):
                 print('Correct!')
-            elif gcd_1 != int(answer):
-                x = f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'."
-                return print(x + "\nLet's try again, {}!".format(name))
+            else:
+                return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'.\nLet's try again, {name}!")
             i += 1
         except ValueError:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'." + "\nLet's try again, {}!".format(name))
-    return print('Congratulations, {}!'.format(name))
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'.\nLet's try again, {name}!")
+    return print(f'Congratulations, {name}!')
