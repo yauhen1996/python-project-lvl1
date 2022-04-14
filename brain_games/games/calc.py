@@ -2,16 +2,16 @@
 from random import randint, choice
 
 
-import prompt
-
 def welcome():
     print('Welcome to the Brain Games!')
+    global name
+    name = input('May I have your name? ')
+    print(f'Hello, {name}!')
+    print('What is the result of the expression?')
 
 
 def calc():
-    name = input('May I have your name? ')
-    print('Hello, {}!'.format(name))
-    print('What is the result of the expression?')
+    welcome()
     i = 0
     while i < 3:
         list_1 = (randint(20, 30), randint(1, 20))

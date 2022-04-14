@@ -7,11 +7,16 @@ from math import gcd
 import prompt
 
 
-def nod():
+def welcome():
     print('Welcome to the Brain Games!')
+    global name
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('Find the greatest common divisor of given numbers.')
+
+
+def nod():
+    welcome()
     i = 0
     while i < 3:
         num = (randint(50, 90), randint(30, 80))

@@ -1,11 +1,10 @@
 #! /usr/bin/env python3
 
 
-from brain_games.games.calc import calc, welcome
+from brain_games.games.calc import calc
 
 
 def main():
-    welcome()
     calc()
 
 

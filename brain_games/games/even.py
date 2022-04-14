@@ -4,13 +4,18 @@ from random import randint
 import prompt
 
 
-def random_num():
+def welcome():
     print('Welcome to the Brain Games!')
+    global name
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
+def random_num():
+    welcome()
     i = 0
-    while i <= 2:
+    while i < 3:
         num = randint(1, 100)
         print('Question:', num)
         answer = input('Your answer: ')

@@ -3,11 +3,16 @@ from random import randint
 import prompt
 
 
-def progression():
+def welcome():
     print('Welcome to the Brain Games!')
+    global name
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('What number is missing in the progression?')
+
+
+def progression():
+    welcome()
     m = 0
     while m < 3:
         num = (randint(2, 15), randint(16, 35), randint(1, 3))
