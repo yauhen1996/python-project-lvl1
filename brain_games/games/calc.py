@@ -19,13 +19,9 @@ def calc():
         example = f'{list_1[0]} {operation} {list_1[1]}'
         print(f'Question: {example}')
         answer = input('Your answer: ')
-        half = f"'{answer}' is wrong answer ;(. Correct answer was '{eval(example)}'."
-        try:
-            if eval(example) == int(answer):
-                print('Correct!')
-            elif eval(example) != int(answer):
-                return print(half + "\nLet's try again, {}!".format(name))
-            i += 1
-        except ValueError:
-            return print(half + "\nLet's try again, {}!".format(name))
-    return print('Congratulations, {}!'.format(name))
+        if str(eval(example)) == answer:
+            print('Correct!')
+        else:
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{str(eval(example))}'.\nLet's try again, {name}!")
+        i += 1
+    return print(f'Congratulations, {name}!')
