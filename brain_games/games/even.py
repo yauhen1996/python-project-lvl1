@@ -19,11 +19,16 @@ def random_num():
         num = randint(1, 100)
         print('Question:', num)
         answer = input('Your answer: ')
-        if num % 2 == 0 and answer == 'yes' or num % 2 != 0 and answer == 'no':
+        yes = 'yes'
+        no = 'no'
+        cor = f"'{answer}' is wrong answer ;(."
+        cor_1 = f"Correct answer was '{yes}'."
+        cor_2 = f"Correct answer was '{no}'."
+        if num % 2 == 0 and answer == yes or num % 2 != 0 and answer == no:
             print('Correct!')
-        elif num % 2 == 0 and answer != 'yes':
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+        elif num % 2 == 0 and answer != yes:
+            return print(cor + cor_1 + f"\nLet's try again, {name}!")
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+            return print(cor + cor_2 + f"\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')

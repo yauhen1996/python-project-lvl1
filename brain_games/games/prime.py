@@ -13,7 +13,7 @@ def welcome():
 num = randint(2, 40)
 
 
-def prime(num):
+def prim(num):
     if num == 2 or num == 3:
         return True
     for i in range(2, num):
@@ -28,12 +28,16 @@ def prime_1():
     while i < 3:
         num = randint(2, 40)
         print('Question:', num)
-        answer = input('Your answer: ')
-        if prime(num) is False and answer == 'no' or prime(num) is True and answer == 'yes':
+        ans = input('Your answer: ')
+        yes = 'yes'
+        no = 'no'
+        cor = f"'{ans}' is wrong answer ;(."
+        cor_1 = f"Correct answer was "
+        if prim(num) is False and ans == no or prim(num) is True and ans == no:
             print('Correct!')
-        elif prime(num) is False and answer != 'no':
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.?\nLet's try again, {name}!")
+        elif prim(num) is False and ans != no:
+            return print(cor + cor_1 + f"'{no}'\nLet's try again, {name}!")
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.?\nLet's try again, {name}!")
+            return print(cor + cor_1 + f"'{yes}'\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')

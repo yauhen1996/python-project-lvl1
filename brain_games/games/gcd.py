@@ -27,6 +27,8 @@ def nod():
         if str(gcd_1) == answer:
             print('Correct!')
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd_1}'.\nLet's try again, {name}!")
+            cor = f"'{answer}' is wrong answer ;(."
+            cor_1 = f"Correct answer was '{gcd_1}'."
+            return print(cor + cor_1 + f"\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')

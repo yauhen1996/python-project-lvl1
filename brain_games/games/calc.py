@@ -19,9 +19,11 @@ def calc():
         example = f'{list_1[0]} {operation} {list_1[1]}'
         print(f'Question: {example}')
         answer = input('Your answer: ')
+        cor = f"'{answer}' is wrong answer ;(."
+        cor_1 = f" Correct answer was '{str(eval(example))}'."
         if str(eval(example)) == answer:
             print('Correct!')
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{str(eval(example))}'.\nLet's try again, {name}!")
+            return print(cor + cor_1 + f"\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')

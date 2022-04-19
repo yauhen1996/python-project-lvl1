@@ -26,6 +26,8 @@ def progression():
                 if str(i) == answer:
                     print('Correct!')
                 else:
-                    return print(f"'{answer}' is wrong answer ;(. Correct answer was '{str(i)}'.\nLet's try again, {name}!")
+                    cor = f"'{answer}' is wrong answer ;(."
+                    cor_1 = f"Correct answer was '{str(i)}'."
+                    return print(cor + cor_1 + f"\nLet's try again, {name}!")
                 m += 1
     return print(f'Congratulations, {name}!')
