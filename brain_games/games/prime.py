@@ -32,8 +32,8 @@ def prime_1():
         yes = 'yes'
         no = 'no'
         cor = f"'{ans}' is wrong answer ;(."
-        cor_1 = f"Correct answer was "
-        if prim(num) is False and ans == no or prim(num) is True and ans == no:
+        cor_1 = "Correct answer was "
+        if prim(num) is False and ans == no or prim(num) is True and ans == yes:
             print('Correct!')
         elif prim(num) is False and ans != no:
             return print(cor + cor_1 + f"'{no}'\nLet's try again, {name}!")
